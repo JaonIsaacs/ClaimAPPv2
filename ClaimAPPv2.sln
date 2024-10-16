@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimAPPv2", "ClaimAPPv2.csproj", "{DDA7AAB1-202E-4056-984C-F6A9091CB9A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClaimTest", "..\ClaimTest\ClaimTest.csproj", "{6F4E9E0F-5B56-49D1-86C4-D6E26C7110D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDA7AAB1-202E-4056-984C-F6A9091CB9A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDA7AAB1-202E-4056-984C-F6A9091CB9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDA7AAB1-202E-4056-984C-F6A9091CB9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDA7AAB1-202E-4056-984C-F6A9091CB9A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F4E9E0F-5B56-49D1-86C4-D6E26C7110D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F4E9E0F-5B56-49D1-86C4-D6E26C7110D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F4E9E0F-5B56-49D1-86C4-D6E26C7110D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F4E9E0F-5B56-49D1-86C4-D6E26C7110D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {273AF8FA-F97F-4C03-9F36-DD30A1E470B8}
+	EndGlobalSection
+EndGlobal

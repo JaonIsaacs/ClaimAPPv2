@@ -1,0 +1,36 @@
+﻿<Page x:Class="ClaimAPPv2.ApproveDenyClaim"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ClaimAPPv2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ApproveDenyClaim">
+
+
+    <Grid>
+        <StackPanel>
+            <Label Content="Select a Claim" />
+
+            <!-- ListView to show all claims -->
+            <ListView x:Name="ClaimsListView" />
+
+            <!-- Display selected claim details -->
+            <TextBlock Text="Claim Description:" FontWeight="Bold" Margin="10,20,0,0"/>
+            <TextBlock x:Name="ClaimDescriptionTextBlock" Margin="10,0,0,10" />
+
+            <TextBlock Text="Document Type:" FontWeight="Bold" Margin="10,10,0,0"/>
+            <TextBlock x:Name="ClaimDocumentTypeTextBlock" Margin="10,0,0,20" />
+
+        </StackPanel>
+
+        <!-- Approve, Deny, and View Claims -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20,0,20">
+            <Button Content="Approve" Width="100" Margin="10" Click="Approve_Click" />
+            <Button Content="Deny" Width="100" Margin="10" Click="Deny_Click" />
+            <Button Content="View Claims" Width="100" Margin="10" Click="ViewClaims_Click" />
+        </StackPanel>
+    </Grid>
+
+</Page>

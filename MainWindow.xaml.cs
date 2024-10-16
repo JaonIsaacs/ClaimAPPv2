@@ -12,7 +12,11 @@ namespace ClaimAPPv2
             InitializeComponent();
             MainFrame.Navigate(new SubmitClaimPage());  
         }
-
+        /// <summary>
+        /// naviagtion buttons
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SubmitClaim_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new SubmitClaimPage());  

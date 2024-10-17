@@ -27,11 +27,18 @@ namespace ClaimAPPv2
     {
         private string attachedDocumentPath;
 
+        /// <summary>
+        /// display
+        /// </summary>
         public SubmitClaimPage()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// opens file explore
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BrowseDocument_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -40,6 +47,8 @@ namespace ClaimAPPv2
                 attachedDocumentPath = openFileDialog.FileName;
             }
         }
+
+        
         public static List<Claim> ClaimsList = new List<Claim>();
         private void SubmitClaim_Click(object sender, RoutedEventArgs e)
         {

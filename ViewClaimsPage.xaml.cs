@@ -18,6 +18,10 @@ namespace ClaimAPPv2
    
         public partial class ViewClaimsPage : Page
         {
+
+        /// <summary>
+        /// display
+        /// </summary>
             public ViewClaimsPage()
             {
                 InitializeComponent();

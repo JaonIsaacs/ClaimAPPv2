@@ -48,7 +48,9 @@ namespace ClaimAPPv2
             }
         }
 
-        
+        /// <summary>
+        /// list display add and submi cliam logic
+        /// </summary>
         public static List<Claim> ClaimsList = new List<Claim>();
         private void SubmitClaim_Click(object sender, RoutedEventArgs e)
         {

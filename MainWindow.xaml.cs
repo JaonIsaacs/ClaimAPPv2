@@ -17,6 +17,8 @@ namespace ClaimAPPv2
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        /// 
+
         private void SubmitClaim_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new SubmitClaimPage());  

@@ -23,13 +23,21 @@ namespace ClaimAPPv2
     {
         public Claim selectedClaim { get; set; }
 
+
+        /// <summary>
+        /// list display of claims
+        /// </summary>
         public ApproveDenyClaim()
         {
             InitializeComponent();
             ClaimsListView.ItemsSource = SubmitClaimPage.ClaimsList;  
             ClaimsListView.SelectionChanged += ClaimsListView_SelectionChanged;  
         }
-
+        /// <summary>
+        /// path location
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ClaimsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             selectedClaim = (Claim)ClaimsListView.SelectedItem; 
@@ -44,7 +52,11 @@ namespace ClaimAPPv2
                 ClaimDocumentTypeTextBlock.Text = System.IO.Path.GetExtension(selectedClaim.DocumentPath);  
             }
         }
-
+        /// <summary>
+        /// approve
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void Approve_Click(object sender, RoutedEventArgs e)
         {
             if (selectedClaim != null)
@@ -58,7 +70,7 @@ namespace ClaimAPPv2
                 MessageBox.Show("Please select a claim.");
             }
         }
-
+        //deny
         public void Deny_Click(object sender, RoutedEventArgs e)
         {
             if (selectedClaim != null)
